@@ -1,0 +1,9 @@
+{
+    "useLaravelPint": true,
+    "spacesAfterDirective": 1,
+    "spacesAfterControlDirective": 1,
+    "phpOptions": {
+        "singleQuote": true,
+        "phpVersion": "8.3"
+    }
+}

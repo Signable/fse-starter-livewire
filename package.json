@@ -1,0 +1,39 @@
+{
+    "private": true,
+    "type": "module",
+    "scripts": {
+        "dev": "vite",
+        "watch": "vite --cors",
+        "build": "vite build",
+        "prepare": "husky"
+    },
+    "lint-staged": {
+        "**/*.js": "prettier --write resources/ --ignore-unknown"
+    },
+    "devDependencies": {
+        "@tailwindcss/forms": "^0.5.2",
+        "@tailwindcss/vite": "^4.0.7",
+        "autoprefixer": "^10.4.20",
+        "axios": "^1.7.4",
+        "concurrently": "^9.0.1",
+        "husky": "^9.1.7",
+        "laravel-vite-plugin": "^1.0",
+        "lint-staged": "^15.4.0",
+        "prettier": "^3.4.2",
+        "prettier-plugin-blade": "^2",
+        "prettier-plugin-tailwindcss": "^0.6.9",
+        "tailwindcss": "^4.0.7",
+        "validate-branch-name": "^1.3.2",
+        "vite": "^6.0"
+    },
+    "optionalDependencies": {
+        "@rollup/rollup-linux-x64-gnu": "4.9.5",
+        "@tailwindcss/oxide-linux-x64-gnu": "^4.0.1",
+        "lightningcss-linux-x64-gnu": "^1.29.1"
+    },
+    "dependencies": {},
+    "validate-branch-name": {
+        "pattern": "^(main|develop){1}$|^(feature|hotfix|release)/.+$",
+        "errorMsg": "Incorrect branching strategy. Please use 'main', 'develop', 'feature/', 'hotfix/', or 'release/'"
+    }
+}
